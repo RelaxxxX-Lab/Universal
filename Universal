@@ -1,0 +1,1527 @@
+local G2L = {};
+
+-- StarterGui.Universal
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[Universal]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Universal.Canvas
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["ZIndex"] = 0;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Image"] = [[rbxassetid://89739242010573]];
+G2L["2"]["Size"] = UDim2.new(0, 490, 0, 320);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 1;
+G2L["2"]["Name"] = [[Canvas]];
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Universal.Canvas.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 12);
+
+
+-- StarterGui.Universal.Canvas.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Transparency"] = 0.2;
+G2L["4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4"]["Thickness"] = 2;
+G2L["4"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Buttons
+G2L["5"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Image"] = [[rbxassetid://131933619915788]];
+G2L["5"]["Size"] = UDim2.new(0, 48, 0, 278);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Name"] = [[Buttons]];
+G2L["5"]["Position"] = UDim2.new(0.06939, 0, 0.06562, 0);
+
+
+-- StarterGui.Universal.Canvas.Buttons.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+
+
+
+-- StarterGui.Universal.Canvas.Buttons.UIStroke
+G2L["7"] = Instance.new("UIStroke", G2L["5"]);
+G2L["7"]["Transparency"] = 0.2;
+G2L["7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["7"]["Thickness"] = 2;
+G2L["7"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Buttons.Aimbot Settings Button
+G2L["8"] = Instance.new("ImageButton", G2L["5"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
+G2L["8"]["ImageColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["8"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8"]["Image"] = [[rbxassetid://134679465121226]];
+G2L["8"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["8"]["Name"] = [[Aimbot Settings Button]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Position"] = UDim2.new(0.5, 0, 0.10791, 0);
+
+
+-- StarterGui.Universal.Canvas.Buttons.Aimbot Settings Button.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+G2L["9"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Buttons.Settings Button
+G2L["a"] = Instance.new("ImageButton", G2L["5"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
+G2L["a"]["ImageColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a"]["Image"] = [[rbxassetid://87128506983976]];
+G2L["a"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["a"]["Name"] = [[Settings Button]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Position"] = UDim2.new(0.5, 0, 0.89928, 0);
+
+
+-- StarterGui.Universal.Canvas.Buttons.Settings Button.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
+G2L["b"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Buttons.Hitbox Settings Button
+G2L["c"] = Instance.new("ImageButton", G2L["5"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
+G2L["c"]["ImageColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["c"]["Image"] = [[rbxassetid://115598924684095]];
+G2L["c"]["Size"] = UDim2.new(0, 40, 0, 40);
+G2L["c"]["Name"] = [[Hitbox Settings Button]];
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Position"] = UDim2.new(0.5, 0, 0.29137, 0);
+
+
+-- StarterGui.Universal.Canvas.Buttons.Hitbox Settings Button.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Neon
+G2L["e"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["e"]["ZIndex"] = 999999999;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["e"]["Image"] = [[rbxassetid://73141044110539]];
+G2L["e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Name"] = [[Neon]];
+G2L["e"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.Universal.Canvas.Topbar
+G2L["f"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Image"] = [[rbxassetid://131933619915788]];
+G2L["f"]["Size"] = UDim2.new(0, 35, 0, 387);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Rotation"] = 90;
+G2L["f"]["Name"] = [[Topbar]];
+G2L["f"]["Position"] = UDim2.new(0.5449, 0, -0.48438, 0);
+
+
+-- StarterGui.Universal.Canvas.Topbar.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["f"]);
+G2L["10"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Topbar.UIStroke
+G2L["11"] = Instance.new("UIStroke", G2L["f"]);
+G2L["11"]["Transparency"] = 0.2;
+G2L["11"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["11"]["Thickness"] = 2;
+G2L["11"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Topbar.Status
+G2L["12"] = Instance.new("ImageLabel", G2L["f"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Image"] = [[rbxassetid://96921987980729]];
+G2L["12"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Rotation"] = -90;
+G2L["12"]["Name"] = [[Status]];
+G2L["12"]["Position"] = UDim2.new(-0, 0, 0.88889, 0);
+
+
+-- StarterGui.Universal.Canvas.Topbar.Title
+G2L["13"] = Instance.new("TextLabel", G2L["f"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextSize"] = 25;
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["13"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Nyx X]];
+G2L["13"]["Rotation"] = -90;
+G2L["13"]["Name"] = [[Title]];
+G2L["13"]["Position"] = UDim2.new(0.47857, 0, 0.60982, 0);
+
+
+-- StarterGui.Universal.Canvas.Topbar.Section
+G2L["14"] = Instance.new("TextLabel", G2L["f"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextStrokeColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["TextSize"] = 18;
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(159, 159, 159);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["14"]["Size"] = UDim2.new(0, 112, 0, 27);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[AimBot]];
+G2L["14"]["Rotation"] = -90;
+G2L["14"]["Name"] = [[Section]];
+G2L["14"]["Position"] = UDim2.new(0.48214, 0, 0.55556, 0);
+
+
+-- StarterGui.Universal.Canvas.Topbar.Close
+G2L["15"] = Instance.new("ImageButton", G2L["f"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Image"] = [[rbxassetid://78398321214194]];
+G2L["15"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Name"] = [[Close]];
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Position"] = UDim2.new(0.17143, 0, 0.01292, 0);
+
+
+-- StarterGui.Universal.Canvas.Topbar.Minimize
+G2L["16"] = Instance.new("ImageButton", G2L["f"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["Image"] = [[rbxassetid://85882798594427]];
+G2L["16"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Name"] = [[Minimize]];
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Position"] = UDim2.new(0.17143, 0, 0.08786, 0);
+
+
+-- StarterGui.Universal.Canvas.Inject Thing
+G2L["17"] = Instance.new("LocalScript", G2L["2"]);
+G2L["17"]["Name"] = [[Inject Thing]];
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame
+G2L["18"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["18"]["Image"] = [[rbxassetid://89739242010573]];
+G2L["18"]["Size"] = UDim2.new(0, 386, 0, 220);
+G2L["18"]["Visible"] = false;
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Name"] = [[Aimbot Frame]];
+G2L["18"]["Position"] = UDim2.new(0.58367, 0, 0.56563, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
+G2L["19"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.UIStroke
+G2L["1a"] = Instance.new("UIStroke", G2L["18"]);
+G2L["1a"]["Transparency"] = 0.2;
+G2L["1a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1a"]["Thickness"] = 2;
+G2L["1a"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame
+G2L["1b"] = Instance.new("ScrollingFrame", G2L["18"]);
+G2L["1b"]["Active"] = true;
+G2L["1b"]["ZIndex"] = 0;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["Size"] = UDim2.new(0, 386, 0, 220);
+G2L["1b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.PlayerOnlyBox
+G2L["1c"] = Instance.new("ImageLabel", G2L["1b"]);
+G2L["1c"]["ZIndex"] = 5;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["1c"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["LayoutOrder"] = 5;
+G2L["1c"]["Name"] = [[PlayerOnlyBox]];
+G2L["1c"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.PlayerOnlyBox.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["1d"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.PlayerOnlyBox.UIStroke
+G2L["1e"] = Instance.new("UIStroke", G2L["1c"]);
+G2L["1e"]["Transparency"] = 0.2;
+G2L["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1e"]["Thickness"] = 2;
+G2L["1e"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.PlayerOnlyBox.Title
+G2L["1f"] = Instance.new("TextLabel", G2L["1c"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextSize"] = 25;
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1f"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[Player Only]];
+G2L["1f"]["Name"] = [[Title]];
+G2L["1f"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.PlayerOnlyBox.Box
+G2L["20"] = Instance.new("TextBox", G2L["1c"]);
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["Name"] = [[Box]];
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(55, 55, 55);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["20"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["20"]["ClearTextOnFocus"] = false;
+G2L["20"]["PlaceholderText"] = [[Player Full Name]];
+G2L["20"]["Size"] = UDim2.new(0, 109, 0, 26);
+G2L["20"]["Position"] = UDim2.new(0.81805, 0, 0.5, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[]];
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.PlayerOnlyBox.Box.UICorner
+G2L["21"] = Instance.new("UICorner", G2L["20"]);
+G2L["21"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.Space
+G2L["22"] = Instance.new("ImageLabel", G2L["1b"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["ImageTransparency"] = 1;
+G2L["22"]["Image"] = [[rbxassetid://0]];
+G2L["22"]["Size"] = UDim2.new(0, 349, 0, 6);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["LayoutOrder"] = -9999;
+G2L["22"]["Name"] = [[Space]];
+G2L["22"]["Position"] = UDim2.new(0.04793, 0, 0, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.TeamCheckToggle
+G2L["23"] = Instance.new("ImageLabel", G2L["1b"]);
+G2L["23"]["ZIndex"] = 3;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["23"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["LayoutOrder"] = 3;
+G2L["23"]["Name"] = [[TeamCheckToggle]];
+G2L["23"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.TeamCheckToggle.UICorner
+G2L["24"] = Instance.new("UICorner", G2L["23"]);
+G2L["24"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.TeamCheckToggle.UIStroke
+G2L["25"] = Instance.new("UIStroke", G2L["23"]);
+G2L["25"]["Transparency"] = 0.2;
+G2L["25"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["25"]["Thickness"] = 2;
+G2L["25"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.TeamCheckToggle.Title
+G2L["26"] = Instance.new("TextLabel", G2L["23"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["TextSize"] = 25;
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["26"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[Team Check]];
+G2L["26"]["Name"] = [[Title]];
+G2L["26"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.TeamCheckToggle.Toggle_Status
+G2L["27"] = Instance.new("ImageButton", G2L["23"]);
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["Image"] = [[rbxassetid://83751127716824]];
+G2L["27"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["Name"] = [[Toggle_Status]];
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Position"] = UDim2.new(0.87393, 0, -0.01114, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.WallCheckToggle
+G2L["28"] = Instance.new("ImageLabel", G2L["1b"]);
+G2L["28"]["ZIndex"] = 4;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["28"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["LayoutOrder"] = 4;
+G2L["28"]["Name"] = [[WallCheckToggle]];
+G2L["28"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.WallCheckToggle.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["29"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.WallCheckToggle.UIStroke
+G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
+G2L["2a"]["Transparency"] = 0.2;
+G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2a"]["Thickness"] = 2;
+G2L["2a"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.WallCheckToggle.Title
+G2L["2b"] = Instance.new("TextLabel", G2L["28"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextSize"] = 25;
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundTransparency"] = 1;
+G2L["2b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2b"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[Wall Check]];
+G2L["2b"]["Name"] = [[Title]];
+G2L["2b"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.WallCheckToggle.Toggle_Status
+G2L["2c"] = Instance.new("ImageButton", G2L["28"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Image"] = [[rbxassetid://83751127716824]];
+G2L["2c"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Name"] = [[Toggle_Status]];
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Position"] = UDim2.new(0.87393, 0, -0.01114, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.FovBox
+G2L["2d"] = Instance.new("ImageLabel", G2L["1b"]);
+G2L["2d"]["ZIndex"] = 2;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["2d"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["LayoutOrder"] = 2;
+G2L["2d"]["Name"] = [[FovBox]];
+G2L["2d"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.FovBox.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
+G2L["2e"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.FovBox.UIStroke
+G2L["2f"] = Instance.new("UIStroke", G2L["2d"]);
+G2L["2f"]["Transparency"] = 0.2;
+G2L["2f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2f"]["Thickness"] = 2;
+G2L["2f"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.FovBox.Title
+G2L["30"] = Instance.new("TextLabel", G2L["2d"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["TextSize"] = 25;
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["BackgroundTransparency"] = 1;
+G2L["30"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["30"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[FOV Amount]];
+G2L["30"]["Name"] = [[Title]];
+G2L["30"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.FovBox.Box
+G2L["31"] = Instance.new("TextBox", G2L["2d"]);
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["Name"] = [[Box]];
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(55, 55, 55);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["31"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["31"]["ClearTextOnFocus"] = false;
+G2L["31"]["PlaceholderText"] = [[FOV]];
+G2L["31"]["Size"] = UDim2.new(0, 109, 0, 26);
+G2L["31"]["Position"] = UDim2.new(0.81805, 0, 0.5, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[]];
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.FovBox.Box.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
+G2L["32"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.AimbotToggle
+G2L["33"] = Instance.new("ImageLabel", G2L["1b"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["33"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["BackgroundTransparency"] = 1;
+G2L["33"]["LayoutOrder"] = 1;
+G2L["33"]["Name"] = [[AimbotToggle]];
+G2L["33"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.AimbotToggle.UICorner
+G2L["34"] = Instance.new("UICorner", G2L["33"]);
+G2L["34"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.AimbotToggle.UIStroke
+G2L["35"] = Instance.new("UIStroke", G2L["33"]);
+G2L["35"]["Transparency"] = 0.2;
+G2L["35"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["35"]["Thickness"] = 2;
+G2L["35"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.AimbotToggle.Title
+G2L["36"] = Instance.new("TextLabel", G2L["33"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["TextSize"] = 25;
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["36"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[Aimbot]];
+G2L["36"]["Name"] = [[Title]];
+G2L["36"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.AimbotToggle.Toggle_Status
+G2L["37"] = Instance.new("ImageButton", G2L["33"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["Image"] = [[rbxassetid://83751127716824]];
+G2L["37"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["37"]["BackgroundTransparency"] = 1;
+G2L["37"]["Name"] = [[Toggle_Status]];
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Position"] = UDim2.new(0.87393, 0, -0.01114, 0);
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.ScrollingFrame.UIListLayout
+G2L["38"] = Instance.new("UIListLayout", G2L["1b"]);
+G2L["38"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["38"]["Padding"] = UDim.new(0, 5);
+G2L["38"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Universal.Canvas.Aimbot Frame.Handler
+G2L["39"] = Instance.new("LocalScript", G2L["18"]);
+G2L["39"]["Name"] = [[Handler]];
+
+
+-- StarterGui.Universal.Canvas.Dragify
+G2L["3a"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3a"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.Universal.Canvas.Buttons Handler
+G2L["3b"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3b"]["Name"] = [[Buttons Handler]];
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame
+G2L["3c"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["3c"]["Image"] = [[rbxassetid://89739242010573]];
+G2L["3c"]["Size"] = UDim2.new(0, 386, 0, 220);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["BackgroundTransparency"] = 1;
+G2L["3c"]["Name"] = [[Hitbox Frame]];
+G2L["3c"]["Position"] = UDim2.new(0.58367, 0, 0.56563, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.UICorner
+G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+G2L["3d"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.UIStroke
+G2L["3e"] = Instance.new("UIStroke", G2L["3c"]);
+G2L["3e"]["Transparency"] = 0.2;
+G2L["3e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["3e"]["Thickness"] = 2;
+G2L["3e"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame
+G2L["3f"] = Instance.new("ScrollingFrame", G2L["3c"]);
+G2L["3f"]["Active"] = true;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["Size"] = UDim2.new(0, 386, 0, 220);
+G2L["3f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.UIListLayout
+G2L["40"] = Instance.new("UIListLayout", G2L["3f"]);
+G2L["40"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["40"]["Padding"] = UDim.new(0, 10);
+G2L["40"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Toggle
+G2L["41"] = Instance.new("ImageLabel", G2L["3f"]);
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["41"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["BackgroundTransparency"] = 1;
+G2L["41"]["Name"] = [[Hitbox Toggle]];
+G2L["41"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Toggle.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["41"]);
+G2L["42"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Toggle.UIStroke
+G2L["43"] = Instance.new("UIStroke", G2L["41"]);
+G2L["43"]["Transparency"] = 0.2;
+G2L["43"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["43"]["Thickness"] = 2;
+G2L["43"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Toggle.Title
+G2L["44"] = Instance.new("TextLabel", G2L["41"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["TextSize"] = 25;
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["BackgroundTransparency"] = 1;
+G2L["44"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["44"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[Hitbox]];
+G2L["44"]["Name"] = [[Title]];
+G2L["44"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Toggle.Toggle_Status
+G2L["45"] = Instance.new("ImageButton", G2L["41"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["Image"] = [[rbxassetid://83751127716824]];
+G2L["45"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Name"] = [[Toggle_Status]];
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Position"] = UDim2.new(0.87393, 0, -0.01114, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Space
+G2L["46"] = Instance.new("ImageLabel", G2L["3f"]);
+G2L["46"]["ZIndex"] = -999999;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["ImageTransparency"] = 1;
+G2L["46"]["Image"] = [[rbxassetid://0]];
+G2L["46"]["Size"] = UDim2.new(0, 349, 0, 6);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["LayoutOrder"] = -9999;
+G2L["46"]["Name"] = [[Space]];
+G2L["46"]["Position"] = UDim2.new(0.04793, 0, 0, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.hitbox Mode Toggle
+G2L["47"] = Instance.new("ImageLabel", G2L["3f"]);
+G2L["47"]["ZIndex"] = 2;
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["47"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["Name"] = [[hitbox Mode Toggle]];
+G2L["47"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.hitbox Mode Toggle.UICorner
+G2L["48"] = Instance.new("UICorner", G2L["47"]);
+G2L["48"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.hitbox Mode Toggle.UIStroke
+G2L["49"] = Instance.new("UIStroke", G2L["47"]);
+G2L["49"]["Transparency"] = 0.2;
+G2L["49"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["49"]["Thickness"] = 2;
+G2L["49"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.hitbox Mode Toggle.Title
+G2L["4a"] = Instance.new("TextLabel", G2L["47"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["TextSize"] = 25;
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["BackgroundTransparency"] = 1;
+G2L["4a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4a"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[Silent Hitbox]];
+G2L["4a"]["Name"] = [[Title]];
+G2L["4a"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.hitbox Mode Toggle.Toggle_Status
+G2L["4b"] = Instance.new("ImageButton", G2L["47"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["Image"] = [[rbxassetid://83751127716824]];
+G2L["4b"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["4b"]["BackgroundTransparency"] = 1;
+G2L["4b"]["Name"] = [[Toggle_Status]];
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Position"] = UDim2.new(0.87393, 0, -0.01114, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Size Box
+G2L["4c"] = Instance.new("ImageLabel", G2L["3f"]);
+G2L["4c"]["ZIndex"] = 4;
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["4c"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["BackgroundTransparency"] = 1;
+G2L["4c"]["LayoutOrder"] = 4;
+G2L["4c"]["Name"] = [[Hitbox Size Box]];
+G2L["4c"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Size Box.UICorner
+G2L["4d"] = Instance.new("UICorner", G2L["4c"]);
+G2L["4d"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Size Box.UIStroke
+G2L["4e"] = Instance.new("UIStroke", G2L["4c"]);
+G2L["4e"]["Transparency"] = 0.2;
+G2L["4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4e"]["Thickness"] = 2;
+G2L["4e"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Size Box.Title
+G2L["4f"] = Instance.new("TextLabel", G2L["4c"]);
+G2L["4f"]["TextWrapped"] = true;
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["TextSize"] = 25;
+G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["BackgroundTransparency"] = 1;
+G2L["4f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4f"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Text"] = [[Hitbox Size]];
+G2L["4f"]["Name"] = [[Title]];
+G2L["4f"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Size Box.Box
+G2L["50"] = Instance.new("TextBox", G2L["4c"]);
+G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["TextSize"] = 14;
+G2L["50"]["Name"] = [[Box]];
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(55, 55, 55);
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["50"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["50"]["ClearTextOnFocus"] = false;
+G2L["50"]["PlaceholderText"] = [[4, 4, 4]];
+G2L["50"]["Size"] = UDim2.new(0, 109, 0, 26);
+G2L["50"]["Position"] = UDim2.new(0.81805, 0, 0.5, 0);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Text"] = [[4, 4, 4]];
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.Hitbox Size Box.Box.UICorner
+G2L["51"] = Instance.new("UICorner", G2L["50"]);
+G2L["51"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.TeamCheck Toggle
+G2L["52"] = Instance.new("ImageLabel", G2L["3f"]);
+G2L["52"]["ZIndex"] = 3;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["52"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["BackgroundTransparency"] = 1;
+G2L["52"]["Name"] = [[TeamCheck Toggle]];
+G2L["52"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.TeamCheck Toggle.UICorner
+G2L["53"] = Instance.new("UICorner", G2L["52"]);
+G2L["53"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.TeamCheck Toggle.UIStroke
+G2L["54"] = Instance.new("UIStroke", G2L["52"]);
+G2L["54"]["Transparency"] = 0.2;
+G2L["54"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["54"]["Thickness"] = 2;
+G2L["54"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.TeamCheck Toggle.Title
+G2L["55"] = Instance.new("TextLabel", G2L["52"]);
+G2L["55"]["TextWrapped"] = true;
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["TextSize"] = 25;
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["BackgroundTransparency"] = 1;
+G2L["55"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["55"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Text"] = [[Team Check]];
+G2L["55"]["Name"] = [[Title]];
+G2L["55"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.ScrollingFrame.TeamCheck Toggle.Toggle_Status
+G2L["56"] = Instance.new("ImageButton", G2L["52"]);
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["Image"] = [[rbxassetid://83751127716824]];
+G2L["56"]["Size"] = UDim2.new(0, 35, 0, 35);
+G2L["56"]["BackgroundTransparency"] = 1;
+G2L["56"]["Name"] = [[Toggle_Status]];
+G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Position"] = UDim2.new(0.87393, 0, -0.01114, 0);
+
+
+-- StarterGui.Universal.Canvas.Hitbox Frame.Handler
+G2L["57"] = Instance.new("LocalScript", G2L["3c"]);
+G2L["57"]["Name"] = [[Handler]];
+
+
+-- StarterGui.Universal.Canvas.Settings Frame
+G2L["58"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["58"]["Image"] = [[rbxassetid://89739242010573]];
+G2L["58"]["Size"] = UDim2.new(0, 386, 0, 220);
+G2L["58"]["Visible"] = false;
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["BackgroundTransparency"] = 1;
+G2L["58"]["Name"] = [[Settings Frame]];
+G2L["58"]["Position"] = UDim2.new(0.58367, 0, 0.56563, 0);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.UICorner
+G2L["59"] = Instance.new("UICorner", G2L["58"]);
+G2L["59"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.UIStroke
+G2L["5a"] = Instance.new("UIStroke", G2L["58"]);
+G2L["5a"]["Transparency"] = 0.2;
+G2L["5a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["5a"]["Thickness"] = 2;
+G2L["5a"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame
+G2L["5b"] = Instance.new("ScrollingFrame", G2L["58"]);
+G2L["5b"]["Active"] = true;
+G2L["5b"]["ZIndex"] = 0;
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["Size"] = UDim2.new(0, 386, 0, 220);
+G2L["5b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.Space
+G2L["5c"] = Instance.new("ImageLabel", G2L["5b"]);
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["ImageTransparency"] = 1;
+G2L["5c"]["Image"] = [[rbxassetid://0]];
+G2L["5c"]["Size"] = UDim2.new(0, 349, 0, 6);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["BackgroundTransparency"] = 1;
+G2L["5c"]["LayoutOrder"] = -9999;
+G2L["5c"]["Name"] = [[Space]];
+G2L["5c"]["Position"] = UDim2.new(0.04793, 0, 0, 0);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.HideKeybindBox
+G2L["5d"] = Instance.new("ImageLabel", G2L["5b"]);
+G2L["5d"]["ZIndex"] = 2;
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["Image"] = [[rbxassetid://118067619004821]];
+G2L["5d"]["Size"] = UDim2.new(0, 349, 0, 35);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["BackgroundTransparency"] = 1;
+G2L["5d"]["LayoutOrder"] = 2;
+G2L["5d"]["Name"] = [[HideKeybindBox]];
+G2L["5d"]["Position"] = UDim2.new(0.09412, 0, 0.05199, 0);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.HideKeybindBox.UICorner
+G2L["5e"] = Instance.new("UICorner", G2L["5d"]);
+G2L["5e"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.HideKeybindBox.UIStroke
+G2L["5f"] = Instance.new("UIStroke", G2L["5d"]);
+G2L["5f"]["Transparency"] = 0.2;
+G2L["5f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["5f"]["Thickness"] = 2;
+G2L["5f"]["Color"] = Color3.fromRGB(59, 59, 59);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.HideKeybindBox.Title
+G2L["60"] = Instance.new("TextLabel", G2L["5d"]);
+G2L["60"]["TextWrapped"] = true;
+G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["TextSize"] = 25;
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["BackgroundTransparency"] = 1;
+G2L["60"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["60"]["Size"] = UDim2.new(0, 200, 0, 34);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["Text"] = [[Hide Menu]];
+G2L["60"]["Name"] = [[Title]];
+G2L["60"]["Position"] = UDim2.new(0.30952, 0, 0.4878, 0);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.HideKeybindBox.Box
+G2L["61"] = Instance.new("TextBox", G2L["5d"]);
+G2L["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["TextSize"] = 14;
+G2L["61"]["Name"] = [[Box]];
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(55, 55, 55);
+G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["61"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["61"]["ClearTextOnFocus"] = false;
+G2L["61"]["PlaceholderText"] = [[Keybind]];
+G2L["61"]["Size"] = UDim2.new(0, 109, 0, 26);
+G2L["61"]["Position"] = UDim2.new(0.81805, 0, 0.5, 0);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Text"] = [[H]];
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.HideKeybindBox.Box.UICorner
+G2L["62"] = Instance.new("UICorner", G2L["61"]);
+G2L["62"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.ScrollingFrame.UIListLayout
+G2L["63"] = Instance.new("UIListLayout", G2L["5b"]);
+G2L["63"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["63"]["Padding"] = UDim.new(0, 5);
+G2L["63"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Universal.Canvas.Settings Frame.Handler
+G2L["64"] = Instance.new("LocalScript", G2L["58"]);
+G2L["64"]["Name"] = [[Handler]];
+
+
+-- StarterGui.Universal.Canvas.Inject Thing
+local function C_17()
+local script = G2L["17"];
+	local Injected = "rbxassetid://96921987980729"
+	local UnInjected = "rbxassetid://97362113629597"
+	
+	local StatusThing = script.Parent.Topbar.Status
+	
+	local Table = {
+		91282350711571,
+		2317712696,
+		1224212277
+	}
+	
+	if table.find(Table, game.PlaceId) then
+		print("Status: Injected\nMode: Silent")
+		StatusThing.Image = Injected
+	else
+		print("Status: Unable to inject")
+		StatusThing.Image = UnInjected
+	end
+	
+end;
+task.spawn(C_17);
+-- StarterGui.Universal.Canvas.Aimbot Frame.Handler
+local function C_39()
+local script = G2L["39"];
+	local Things = script.Parent.ScrollingFrame
+	
+	local ToggleOff = "rbxassetid://83751127716824"
+	local ToggleOn = "rbxassetid://86987937873772"
+	
+	-- Toggles
+	local AimbotToggle = false
+	local TeamCheckToggle = false
+	local WallCheckToggle = false
+	local TargetUsername = nil
+	
+	-- Boxes textbox
+	local FOVAmountBox = Things.FovBox.Box
+	local PlayerOnlyBox = Things.PlayerOnlyBox.Box
+	
+	-- Toggle Buttons
+	local AimbotButton = Things.AimbotToggle.Toggle_Status
+	local TeamCheckButton = Things.TeamCheckToggle.Toggle_Status
+	local WallCheckButton = Things.WallCheckToggle.Toggle_Status
+	
+	-- Aimbot Settings
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	local AimRadius = 100 -- FOV inicial do Aimbot em pixels
+	
+	-- Círculo de FOV
+	local FovCircle = Drawing.new("Circle")
+	FovCircle.Radius = AimRadius
+	FovCircle.Thickness = 1
+	FovCircle.Color = Color3.fromRGB(255, 255, 255)
+	FovCircle.Filled = false
+	FovCircle.Transparency = 1
+	FovCircle.Visible = false
+	
+	-- Atualiza a posição do FOV no centro da tela
+	local function updateFovCircle()
+		local camera = workspace.CurrentCamera
+		local screenSize = camera.ViewportSize
+		FovCircle.Position = Vector2.new(screenSize.X / 2, screenSize.Y / 2)
+	end
+	
+	-- Verifica se o jogador é válido
+	local function isValidTarget(player)
+		if player == LocalPlayer then return false end
+		local character = player.Character
+		local head = character and character:FindFirstChild("Head")
+		local humanoid = character and character:FindFirstChild("Humanoid")
+		local camera = workspace.CurrentCamera
+	
+		if not character or not head or not humanoid or humanoid.Health <= 0 then
+			return false
+		end
+	
+		if TargetUsername and player.Name ~= TargetUsername then
+			return false
+		end
+	
+		if TeamCheckToggle and player.Team == LocalPlayer.Team then
+			return false
+		end
+	
+		if WallCheckToggle then
+			local origin = Camera.CFrame.Position
+			local direction = (head.Position - origin).Unit
+			local ray = Ray.new(origin, direction * 500)
+			local part = workspace:FindPartOnRayWithIgnoreList(ray, {LocalPlayer.Character})
+	
+			if part and not part:IsDescendantOf(character) then
+				return false
+			end
+		end
+	
+		local screenPos, isOnScreen = camera:WorldToViewportPoint(head.Position)
+		local screenCenter = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 2)
+		local distance = (Vector2.new(screenPos.X, screenPos.Y) - screenCenter).Magnitude
+	
+		return isOnScreen and distance <= AimRadius
+	end
+	
+	-- Encontra o jogador mais próximo dentro do FOV
+	local function getClosestPlayer()
+		local closestPlayer = nil
+		local shortestDistance = math.huge
+		local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			if isValidTarget(player) then
+				local character = player.Character
+				local head = character:FindFirstChild("Head")
+				if head then
+					local screenPos = Camera:WorldToViewportPoint(head.Position)
+					local distance = (Vector2.new(screenPos.X, screenPos.Y) - screenCenter).Magnitude
+					if distance < shortestDistance then
+						closestPlayer = player
+						shortestDistance = distance
+					end
+				end
+			end
+		end
+	
+		return closestPlayer
+	end
+	
+	-- Mira na cabeça do jogador com previsão de movimento
+	local function predictTargetPosition(target)
+		local head = target.Character:FindFirstChild("Head")
+		local humanoidRootPart = target.Character:FindFirstChild("HumanoidRootPart")
+		if head and humanoidRootPart then
+			local distance = (head.Position - Camera.CFrame.Position).Magnitude
+			local predictionFactor = math.clamp(distance / 1000, 0, 0.012)
+			local velocity = humanoidRootPart.Velocity * predictionFactor
+			return head.Position + velocity
+		end
+		return head.Position
+	end
+	
+	-- Botão Aimbot
+	AimbotButton.MouseButton1Click:Connect(function()
+		AimbotToggle = not AimbotToggle
+		AimbotButton.Image = AimbotToggle and ToggleOn or ToggleOff
+		FovCircle.Visible = AimbotToggle
+	end)
+	
+	-- Botão Team Check
+	TeamCheckButton.MouseButton1Click:Connect(function()
+		TeamCheckToggle = not TeamCheckToggle
+		TeamCheckButton.Image = TeamCheckToggle and ToggleOn or ToggleOff
+	end)
+	
+	-- Botão Wall Check
+	WallCheckButton.MouseButton1Click:Connect(function()
+		WallCheckToggle = not WallCheckToggle
+		WallCheckButton.Image = WallCheckToggle and ToggleOn or ToggleOff
+	end)
+	
+	-- Atualiza AimRadius a partir da FOVAmountBox
+	FOVAmountBox.FocusLost:Connect(function(enterPressed)
+		local newValue = tonumber(FOVAmountBox.Text)
+		if newValue then
+			AimRadius = math.clamp(newValue, 10, 500) -- Limita o valor do FOV entre 10 e 500
+			FovCircle.Radius = AimRadius
+			FOVAmountBox.Text = tostring(AimRadius)
+		else
+			FOVAmountBox.Text = tostring(AimRadius)
+		end
+	end)
+	
+	-- Atualiza TargetUsername a partir da PlayerOnlyBox
+	PlayerOnlyBox.FocusLost:Connect(function(enterPressed)
+		local text = PlayerOnlyBox.Text
+		TargetUsername = (text ~= "" and text) or nil
+	end)
+	
+	-- Mira automaticamente no jogador mais próximo enquanto o botão direito do mouse estiver pressionado
+	local isRightMouseDown = false
+	UserInputService.InputBegan:Connect(function(input, processed)
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			isRightMouseDown = true
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input, processed)
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			isRightMouseDown = false
+		end
+	end)
+	
+	-- Atualiza a mira
+	RunService.RenderStepped:Connect(function()
+		updateFovCircle()
+	
+		if AimbotToggle and isRightMouseDown then
+			local target = getClosestPlayer()
+			if target and target.Character and target.Character:FindFirstChild("Head") then
+				local predictedPosition = predictTargetPosition(target)
+				Camera.CFrame = CFrame.new(Camera.CFrame.Position, predictedPosition)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_39);
+-- StarterGui.Universal.Canvas.Dragify
+local function C_3a()
+local script = G2L["3a"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end;
+task.spawn(C_3a);
+-- StarterGui.Universal.Canvas.Buttons Handler
+local function C_3b()
+local script = G2L["3b"];
+	-- Button handler
+	local Buttons = script.Parent.Buttons
+	local Frames = script.Parent
+	local Section = script.Parent.Topbar.Section -- Mostra a seção atual
+	local CloseButton = script.Parent.Topbar.Close
+	local MinimizeButton = script.Parent.Topbar.Minimize
+	
+	-- Buttons
+	local AimbotSettingsButton = Buttons["Aimbot Settings Button"]
+	local HitboxSettingsButton = Buttons["Hitbox Settings Button"]
+	local SettingsButton = Buttons["Settings Button"]
+	
+	-- Frames
+	local AimbotSettingsFrame = Frames["Aimbot Frame"]
+	local HitboxSettingsFrame = Frames["Hitbox Frame"]
+	local SettingsFrame = Frames["Settings Frame"]
+	
+	-- Helper to update button colors
+	local function updateButtonColors(activeButton)
+		for _, button in pairs(Buttons:GetChildren()) do
+			if button:IsA("ImageButton") then
+				button.ImageColor3 = button == activeButton and Color3.fromRGB(75, 0, 130) or Color3.new(0.619608, 0.619608, 0.619608)
+			end
+		end
+	end
+	
+	-- Helper to update section text
+	local function updateSectionText(text)
+		Section.Text = text
+	end
+	
+	-- Set default visibility
+	AimbotSettingsFrame.Visible = true
+	HitboxSettingsFrame.Visible = false
+	SettingsFrame.Visible = false
+	updateButtonColors(AimbotSettingsButton)
+	updateSectionText("Aimbot Settings")
+	
+	-- Toggle frame visibility on button click
+	AimbotSettingsButton.MouseButton1Click:Connect(function()
+		AimbotSettingsFrame.Visible = true
+		HitboxSettingsFrame.Visible = false
+		SettingsFrame.Visible = false
+		updateButtonColors(AimbotSettingsButton)
+		updateSectionText("Aimbot Settings")
+	end)
+	
+	HitboxSettingsButton.MouseButton1Click:Connect(function()
+		AimbotSettingsFrame.Visible = false
+		HitboxSettingsFrame.Visible = true
+		SettingsFrame.Visible = false
+		updateButtonColors(HitboxSettingsButton)
+		updateSectionText("Hitbox Settings")
+	end)
+	
+	SettingsButton.MouseButton1Click:Connect(function()
+		AimbotSettingsFrame.Visible = false
+		HitboxSettingsFrame.Visible = false
+		SettingsFrame.Visible = true
+		updateButtonColors(SettingsButton)
+		updateSectionText("Settings")
+	end)
+	
+	
+	CloseButton.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+	
+	MinimizeButton.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Enabled = false
+	end)
+end;
+task.spawn(C_3b);
+-- StarterGui.Universal.Canvas.Hitbox Frame.Handler
+local function C_57()
+local script = G2L["57"];
+	local Things = script.Parent.ScrollingFrame
+	
+	local ToggleOff = "rbxassetid://83751127716824" -- Imagem para estado desativado
+	local ToggleOn = "rbxassetid://86987937873772" -- Imagem para estado ativado
+	
+	-- Toggles
+	local HitboxToggle = false
+	local SilentModeToggle = false
+	local TeamCheckToggle = false
+	
+	-- Boxes textbox
+	local HitboxSizeBox = Things["Hitbox Size Box"].Box
+	
+	-- Toggle Buttons
+	local HitboxToggleButton = Things["Hitbox Toggle"].Toggle_Status
+	local HitboxModeToggleButton = Things["hitbox Mode Toggle"].Toggle_Status
+	local TeamCheckToggleButton = Things["TeamCheck Toggle"].Toggle_Status
+	
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local LocalPlayer = Players.LocalPlayer
+	
+	-- Variables
+	local HitboxSize = Vector3.new(4, 4, 4) -- Default size
+	
+	-- Handle hitbox size input
+	HitboxSizeBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local inputText = HitboxSizeBox.Text
+			local x, y, z = inputText:match("^(%d+%.?%d*) (%d+%.?%d*) (%d+%.?%d*)$")
+			if x and y and z then
+				x, y, z = tonumber(x), tonumber(y), tonumber(z)
+				if x > 0 and y > 0 and z > 0 then
+					HitboxSize = Vector3.new(x, y, z)
+				else
+					HitboxSizeBox.Text = "" -- Reseta a entrada se for inválida
+				end
+			else
+				HitboxSizeBox.Text = "" -- Reseta a entrada se o formato for inválido
+			end
+		end
+	end)
+	
+	-- Toggle functionality for Hitbox
+	HitboxToggleButton.MouseButton1Click:Connect(function()
+		HitboxToggle = not HitboxToggle -- Alterna o estado do Hitbox
+		HitboxToggleButton.Image = HitboxToggle and ToggleOn or ToggleOff -- Atualiza a imagem
+	end)
+	
+	-- Toggle functionality for Silent Mode
+	HitboxModeToggleButton.MouseButton1Click:Connect(function()
+		SilentModeToggle = not SilentModeToggle -- Alterna o estado do Silent Mode
+		HitboxModeToggleButton.Image = SilentModeToggle and ToggleOn or ToggleOff -- Atualiza a imagem
+	end)
+	
+	-- Toggle functionality for Team Check
+	TeamCheckToggleButton.MouseButton1Click:Connect(function()
+		TeamCheckToggle = not TeamCheckToggle -- Alterna o estado do Team Check
+		TeamCheckToggleButton.Image = TeamCheckToggle and ToggleOn or ToggleOff -- Atualiza a imagem
+	end)
+	
+	-- Function to adjust hitbox
+	local function adjustHitbox()
+		if HitboxToggle then
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					-- Ignora jogadores do mesmo time se TeamCheckToggle estiver ativado
+					if TeamCheckToggle and player.Team == LocalPlayer.Team then
+						continue
+					end
+	
+					local rootPart = player.Character.HumanoidRootPart
+					rootPart.Size = HitboxSize -- Define o tamanho da hitbox com base no valor na Box
+					rootPart.Transparency = SilentModeToggle and 1 or 0.5
+					rootPart.CanCollide = false
+				end
+			end
+		else
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					local rootPart = player.Character.HumanoidRootPart
+					rootPart.Size = Vector3.new(2, 2, 1) -- Tamanho padrão quando desativado
+					rootPart.Transparency = 1
+					rootPart.CanCollide = false
+				end
+			end
+		end
+	end
+	
+	-- Continuously adjust hitbox
+	RunService.Heartbeat:Connect(adjustHitbox)
+	
+end;
+task.spawn(C_57);
+-- StarterGui.Universal.Canvas.Settings Frame.Handler
+local function C_64()
+local script = G2L["64"];
+	local Things = script.Parent.ScrollingFrame
+	local Menu = script.Parent.Parent.Parent -- ScreenGui
+	
+	local HideKeybindBox = Things.HideKeybindBox.Box
+	
+	-- Services
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local HideKeybind = "H" -- Default keybind set to "H"
+	
+	-- Ensure the keybind box only accepts one uppercase letter
+	HideKeybindBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local inputText = HideKeybindBox.Text:upper() -- Convert to uppercase
+			if inputText:match("^[A-Z]$") then -- Check if it's a single uppercase letter
+				HideKeybind = inputText
+			else
+				HideKeybindBox.Text = "" -- Reset if invalid
+				HideKeybind = "H" -- Revert to default keybind
+			end
+		end
+	end)
+	
+	-- Toggle menu visibility using the keybind
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if not gameProcessed and HideKeybind and input.KeyCode == Enum.KeyCode[HideKeybind] then
+			Menu.Enabled = not Menu.Enabled
+		end
+	end)
+	
+end;
+task.spawn(C_64);
+
+return G2L["1"], require;
